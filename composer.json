@@ -1,0 +1,35 @@
+{
+	"name": "getkirby/rector",
+	"description": "Rector rules to upgrade Kirby sites and plugins",
+	"license": "MIT",
+	"type": "rector-extension",
+	"keywords": [
+		"kirby",
+		"rector",
+		"upgrade",
+		"refactoring"
+	],
+	"require": {
+		"php": ">=8.2",
+		"rector/rector": "^2.2"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^12.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Kirby\\Rector\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Kirby\\Rector\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"scripts": {
+		"test": "phpunit"
+	}
+}
