@@ -22,6 +22,9 @@ return RectorConfig::configure()
 	->withPaths([
 		__DIR__ . '/site',
 	])
+	->withSkip([
+		__DIR__ . '/site/plugins/*/vendor',
+	])
 	->withImportNames(importShortClasses: false, removeUnusedImports: true)
 	->withSets([KirbySetList::KIRBY_6]);
 ```
